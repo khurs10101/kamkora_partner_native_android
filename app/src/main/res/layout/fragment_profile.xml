@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lv_fragment_profile_not_logged_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/not_found_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/pbProfile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_fragment_profile_login"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_green2"
+                    android:gravity="center"
+                    android:text="Please Login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_fragment_profile_logged_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:gravity="center"
+                android:text="Profile"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/coresans_cr_medium"
+                android:gravity="center"
+                android:text="Click to upload new image"
+                android:textSize="15sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/tv_profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Swami Nityananda"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iv_profile_name_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_edit" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Email"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_mail" />
+
+                        <TextView
+                            android:id="@+id/tv_profile_email"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/coresans_cr_medium"
+                            android:padding="10dp"
+                            android:text="Helloworld@gmail.com"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_profile_email_edit"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_edit" />
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Phone"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_phone" />
+
+                        <TextView
+                            android:id="@+id/tv_profile_phone"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/coresans_cr_medium"
+                            android:padding="10dp"
+                            android:text="1234567890"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_profile_phone_edit"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_edit" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Gender"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_sex" />
+
+                        <TextView
+                            android:id="@+id/tv_profile_gender"
+                            android:layout_width="250dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/coresans_cr_medium"
+                            android:padding="10dp"
+                            android:text="Male"
+                            android:textColor="@color/navy_blue"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_profile_gender_edit"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_edit" />
+
+
+                    </LinearLayout>
+
+                    <!--            <TextView-->
+
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_margin="15dp"-->
+                    <!--                android:background="@drawable/rounded_editetext"-->
+                    <!--                android:drawableLeft="@drawable/ic_perm_"-->
+                    <!--                android:drawablePadding="10dp"-->
+                    <!--                android:hint="Email or Mobile No"-->
+                    <!--                android:inputType="text"-->
+                    <!--                android:padding="12dp"-->
+                    <!--                android:textColor="@color/colorGrey2"-->
+                    <!--                android:textColorHint="@color/colorGrey" />-->
+
+                    <!--            <TextView-->
+
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_margin="15dp"-->
+                    <!--                android:background="@drawable/rounded_editetext"-->
+                    <!--                android:drawableLeft="@drawable/ic_perm_"-->
+                    <!--                android:drawablePadding="10dp"-->
+                    <!--                android:hint="Email or Mobile No"-->
+                    <!--                android:inputType="text"-->
+                    <!--                android:padding="12dp"-->
+                    <!--                android:textColor="@color/colorGrey2"-->
+                    <!--                android:textColorHint="@color/colorGrey" />-->
+
+                    <!--            <TextView-->
+
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_margin="15dp"-->
+                    <!--                android:background="@drawable/rounded_editetext"-->
+                    <!--                android:drawableLeft="@drawable/ic_perm_"-->
+                    <!--                android:drawablePadding="10dp"-->
+                    <!--                android:hint="Email or Mobile No"-->
+                    <!--                android:inputType="text"-->
+                    <!--                android:padding="12dp"-->
+                    <!--                android:textColor="@color/colorGrey2"-->
+                    <!--                android:textColorHint="@color/colorGrey" />-->
+
+
+                    <!--            <TextView-->
+
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_margin="15dp"-->
+                    <!--                android:background="@drawable/rounded_editetext"-->
+                    <!--                android:drawableLeft="@drawable/ic_perm_"-->
+                    <!--                android:drawablePadding="10dp"-->
+                    <!--                android:hint="Email or Mobile No"-->
+                    <!--                android:inputType="text"-->
+                    <!--                android:padding="12dp"-->
+                    <!--                android:textColor="@color/colorGrey2"-->
+                    <!--                android:textColorHint="@color/colorGrey" />-->
+
+                    <LinearLayout
+                        android:id="@+id/lv_profile_not_verified"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/ic_close" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Account Not Verified"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lv_profile_verified"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/ic_tick" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Account Verified"
+                            android:textSize="25sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_profile_edit"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_green2"
+                    android:gravity="center"
+                    android:text="Edit Profile"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_profile_upload_photo_id"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_green2"
+                    android:gravity="center"
+                    android:text="Upload Photo ID"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_profile_upload_address"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_green2"
+                    android:gravity="center"
+                    android:text="Upload Address ID"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_green2"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_profile_logout"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_green2"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

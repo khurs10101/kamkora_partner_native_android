@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">HomeServ Partner</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="singup">Signup</string>
+    <string name="sign_up">Signup</string>
+    <string name="login_here">Login</string>
+    <string name="spinner_title">Select Area</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+
+    <string-array name="sa_country_code">
+        <item>+91</item>
+    </string-array>
+
+    <string-array name="sa_gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="sa_city">
+        <item>Guwahati</item>
+    </string-array>
+
+    <string-array name="sa_id_type">
+        <item>Passport</item>
+        <item>Driving License</item>
+        <item>Voter ID</item>
+        <item>PAN Card</item>
+    </string-array>
+
+    <string-array name="sa_address_type">
+        <item>Passport</item>
+        <item>Driving License</item>
+        <item>Voter ID</item>
+    </string-array>
+
+    <string-array name="sa_profession">
+        <item>Electrician</item>
+        <item>Photography</item>
+        <item>Ac Service</item>
+        <item>Pest Control</item>
+    </string-array>
+</resources>

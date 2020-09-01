@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_tick" />
+
+    <TextView
+        android:id="@+id/tv_dialog_info_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/coresans_cr_medium"
+        android:text="Somthing went wrong!"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_dialog_info_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_outline_green"
+        android:text="Ok"
+        android:textColor="@color/colorGreen" />
+
+
+</LinearLayout>
